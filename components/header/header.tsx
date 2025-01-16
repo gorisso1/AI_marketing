@@ -2,8 +2,6 @@
 import Image from "next/image";
 import {headerData} from "data/header.data";
 import {useState} from "react";
-import {OrbitControls, useGLTF} from "@react-three/drei";
-import {Canvas} from "@react-three/fiber";
 
 
 
@@ -13,15 +11,16 @@ const Header =  () =>{
         setIsMenuOpen(prevState => !prevState)
     }
 
-    const scrollToTarget = (name:string) => {
-        const targetElement:HTMLElement = document.getElementById(`target-${name}`);
+    const scrollToTarget = (name: string) => {
+        const targetElement: HTMLElement | null = document.getElementById(`target-${name}`);
         if (targetElement) {
             targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
-
-
-
     };
+
+
+
+
 
     return (
         <div className="w-full">
