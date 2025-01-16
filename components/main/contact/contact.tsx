@@ -5,11 +5,11 @@ const Contact = () =>{
     return(
         <div className="mx-auto" >
             <div
-                className="p-10 flex flex-col md:flex-row justify-center items-center  dark:text-white bg-gradient-text md:w-1000px rounded-20px">
+                className="p-10 flex flex-col md:flex-row justify-center items-center  dark:text-white bg-gradient-text animate-gradient-animation md:w-1000px rounded-20px">
                 <div className="md:hidden block">
                     <Image src="/img/content/6.webp" alt="cart" width={400} height={400}/>
                 </div>
-                <div className="grid grid-cols-1 gap-5">
+                <div id="target-Product" className="grid grid-cols-1 gap-5">
                     <h2 className="dark:text-white font-bold">Let’s work together</h2>
                     <div>
                         <p>Location 1</p>

@@ -6,6 +6,25 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        'gradient-shift': {
+          '0%': {
+            backgroundPosition: '0% 50%',
+            backgroundSize: '200% 200%',
+          },
+          '50%': {
+            backgroundPosition: '100% 50%',
+            backgroundSize: '200% 200%',
+          },
+          '100%': {
+            backgroundPosition: '0% 50%',
+            backgroundSize: '200% 200%',
+          },
+        },
+      },
+      animation: {
+        'gradient-animation': 'gradient-shift 5s ease infinite',
+      },
 
       borderRadius:{
         "23px":"23px",
@@ -51,7 +70,10 @@ module.exports = {
       backgroundImage: {
         'gradient-text': 'linear-gradient(267deg, #00F0FF 4.01%, #5200FF 57.55%, #FF2DF7 114.97%)',
       },
+
     },
   },
-  plugins: [],
+  plugins: [
+
+  ],
 }

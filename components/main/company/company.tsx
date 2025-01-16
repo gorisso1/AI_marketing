@@ -6,7 +6,7 @@ const Company = () => {
         <div>
 
 
-            <div className="flex justify-center">
+            <div id="target-Explore" className="flex justify-center">
                 <div className="grid grid-cols-2 gap-6  md:grid-cols-7 md:gap-4" >
                     {companyData.map((item) => (
                         <div key={item.id} className="flex justify-center items-center">

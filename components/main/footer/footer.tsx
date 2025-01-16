@@ -19,7 +19,7 @@ const Footer = () =>{
                     <h2>Address 2: 18 Strathearn Ave #7B Brampton ON L6T 4X7 Canada</h2>
 
                 </div>
-                <div className="grid grid-cols-1 gap-6">
+                <div id="target-Team" className="grid grid-cols-1 gap-6">
                     <h4>Quick Links</h4>
                     <a>Home</a>
                     <a>Who We Serve</a>

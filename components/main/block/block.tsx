@@ -1,7 +1,7 @@
 const Block = () =>{
 
     return(
-        <div className="mx-auto md:mx-0">
+        <div id="target-Marketplace" className="mx-auto md:mx-0">
             <div className="flex flex-col gap-16 justify-center dark:text-white md:flex-row md:gap-16">
                 <div className="w-350px h-400px bg-block-color rounded-20px flex flex-col text-center p-10">
                     <div className="mx-auto">
